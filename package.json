@@ -1,0 +1,41 @@
+{
+  "name": "khronos-texture-container",
+  "version": "0.0.1",
+  "description": "porting of babylon.khronosTextureContainer babylon.js and KTXLoader three.js",
+  "main": "dist/bundle.esm.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rimraf dist/* && rollup -c"
+  },
+  "files": [
+    "package.json",
+    "dist/bundle.cjs.js",
+    "dist/bundle.cjs.min.js",
+    "dist/bundle.esm.js",
+    "dist/bundle.esm.min.js",
+    "dist/bundle.iife.js",
+    "dist/bundle.iife.min.js",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williammanco/khronos-texture-container.git"
+  },
+  "keywords": [
+    "container",
+    "khronos",
+    "texture"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williammanco/khronos-texture-container/issues"
+  },
+  "homepage": "https://github.com/williammanco/khronos-texture-container#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "rollup": "^1.9.0",
+    "rollup-plugin-terser": "^5.1.1"
+  }
+}
