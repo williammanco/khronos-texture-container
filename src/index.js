@@ -86,7 +86,11 @@ export default class KhronosTextureContainer {
     this.loadType = KhronosTextureContainer.COMPRESSED_2D;
   }
 
-  mipmaps(loadMipmaps) {
+  upload(loadMipmaps) {
+    return this.upload2DCompressedLevels(loadMipmaps);
+  }
+
+  upload2DCompressedLevels(loadMipmaps) {
     const mipmaps = [];
 
     // initialize width & height for level 1
@@ -111,7 +115,7 @@ export default class KhronosTextureContainer {
       height = Math.max(1.0, height * 0.5);
     }
 
-    return mipmaps;
+    return loadMipmaps ? mipmaps : mipmaps[0];
   }
 }
 
