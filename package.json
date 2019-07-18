@@ -1,6 +1,6 @@
 {
   "name": "khronos-texture-container",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "porting of babylon.khronosTextureContainer babylon.js and KTXLoader three.js",
   "main": "dist/bundle.esm.min.js",
   "scripts": {
